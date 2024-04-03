@@ -1,0 +1,41 @@
+\documentclass[8pt,landscape,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning,arrows,fit,calc,graphs,graphs.standard}
+\usepackage[nosf]{kpfonts}
+\usepackage[t1]{sourcesanspro}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage[top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{microtype}
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[thinc]{esdiff}
+
+
+\include{style}
+\include{commands}
+
+% header
+% use '~' for word spacing
+\newcommand{\header}{
+\begin{mdframed}[style=header]
+\footnotesize
+Le~Tan~Dang~Khoa
+\end{mdframed}
+}
+
+\begin{document}
+% font size
+\footnotesize
+
+% layout columns
+\begin{multicols*}{5}
+    % content goes here
+\end{multicols*}
+\end{document}
